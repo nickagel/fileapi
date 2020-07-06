@@ -1,0 +1,28 @@
+{
+  "name": "fileapi",
+  "version": "1.0.0",
+  "description": "API with two endpoints. /upload for to submit a text file and return word occurrence count and total word count. /query to ",
+  "main": "server.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --require blanket"
+  },
+  "author": "Nick Agel",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.4.0",
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "formidable": "^1.1.1",
+    "fs": "0.0.1-security",
+    "morgan": "^1.8.1",
+    "path": "^0.12.7",
+    "readline": "^1.3.0",
+    "request": "^2.81.0"
+  },
+  "devDependencies": {
+    "blanket": "^1.2.3",
+    "chai": "^3.5.0",
+    "fs": "0.0.1-security",
+    "mocha": "^3.4.1"
+  }
+}

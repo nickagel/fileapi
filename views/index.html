@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="./../css/style.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <title>File Parser</title>
+   </head>
+   <body>
+       <article class="warning" id="error"></article>
+       <article class="container"><h1>File Parser</h1></article>
+       <article class="container">
+      <form class="container row">
+         <div class="form-group">
+            <label for="exclude">Exclude Words:
+            <input class="form-control" id="exclude" type="text" name="wordsExclude"></label>
+            <label class="btn btn-default btn-file">
+            Browse <input id="upload-input" type="file" name="upload" single accept="text/plain" >
+            </label>
+         </div>
+         <div class="checkbox">
+            <label for="exclude"><input id="spellcheck" type="checkbox"> Spellcheck File:</label>
+         </div>
+         <button id="submit" type="submit" value="Upload" class="btn btn-default">Upload</button>
+      </form>
+      <script src="js/upload.js"></script>
+      <ol class="list-group" id="misspelled"></ol>
+      <ol class="list-group" id="excludedWords"></ol>
+      <table class="table table-striped">
+         <tbody id="words">
+         </tbody>
+      </table>
+       </article>
+   </body>
+</html>
